@@ -140,7 +140,7 @@ function Home() {
         </div>
       </section>
       <section className="text-center mt-20">
-        <h3 className="text-tColor font-[Anton] text-2xl">
+        <h3 className="text-tColor font-[Anton] text-2xl px-5">
           Seeking our price huh? Don't worry—here's a PDF for your convenience.
         </h3>
         <a href="./assets/images/pexels.jpg" download>
