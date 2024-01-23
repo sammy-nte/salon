@@ -8,7 +8,7 @@ function AboutUs() {
           Dedicated to crafting personalized excellence where passion meets
           expertise.
         </h1>
-        <div className="h-[400px] bg-[url('./assets/images/barber.jpg')] bg-cover bg-no-repeat bg-center rounded-2xl w-[70%] mx-auto" />
+        <div className="h-[400px] bg-[url('../public/assets/images/barber.jpg')] bg-cover bg-no-repeat bg-center rounded-2xl w-[70%] mx-auto" />
       </section>
       <AbCards
         text="Born from a shared love for creativity and a commitment to
