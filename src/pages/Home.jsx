@@ -24,7 +24,7 @@ function Home() {
               </button>
             </Link>
           </div>
-          <div className="hidden lg:block h-[500px] w-[300px] bg-[url('./assets/images/pexels.jpg')] bg-no-repeat bg-cover bg-center rounded-full my-5 relative after:content[' '] after:absolute after:w-full after:h-full after:border-4 after:rounded-full after:left-4" />
+          <div className="hidden lg:block h-[500px] w-[300px] bg-[url('../public/assets/images/pexels.jpg')] bg-no-repeat bg-cover bg-center rounded-full my-5 relative after:content[' '] after:absolute after:w-full after:h-full after:border-4 after:rounded-full after:left-4" />
         </div>
       </section>
       <section className="max-w-[800px] mx-auto mt-8 rounded-lg">
