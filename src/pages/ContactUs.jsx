@@ -24,7 +24,7 @@ export default function ContactUs() {
     });
   }
   return (
-    <section className="bg-oColor h-[100vh] grid place-content-center">
+    <section className=" grid place-content-center">
       <div className="text-tColor flex flex-col justify-around items-center mx-auto rounded-lg w-[90%] min-[840px]:w-[900px] min-[840px]:flex-row">
         <div
           style={{ boxShadow: "5px 5px 11px #ebe2de, -5px -5px 11px #ffffff" }}
@@ -113,7 +113,7 @@ export default function ContactUs() {
                 Message
               </label>
             </div>
-            <button type="submit" className="form-submit-btn">
+            <button type="button" className="form-submit-btn">
               Submit
             </button>
             <a href="mailto:sammyntewusu1@gmail.com">

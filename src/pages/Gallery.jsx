@@ -1,8 +1,133 @@
-
 function Gallery() {
   return (
-    <div>Gallery</div>
-  )
+    <div>
+      <section className="max-w-[700px] mt-8 mx-auto">
+        <h2 className="font-[Anton] text-tColor text-2xl text-center my-4">
+          Gallery
+        </h2>
+        <div className="flex flex-col min-[700px]:flex-row items-center gap-4 justify-around">
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+        </div>
+      </section>
+      <section className="mt-8 max-w-containerMax mx-auto  p-3 flex flex-col items-center gap-10">
+        <div className="grid grid-cols-1 gap-3 place-items-center min-[500px]:grid-cols-2 lg:grid-cols-4 w-full border-b-2 border-dashed p-8">
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+        </div>
+        <div className="grid grid-cols-1 gap-3 place-items-center min-[500px]:grid-cols-2 lg:grid-cols-4 w-full border-b-2 border-dashed p-8">
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+        </div>
+        <div className="grid grid-cols-1 gap-3 place-items-center min-[500px]:grid-cols-2 lg:grid-cols-4 w-full border-b-2 border-dashed p-8">
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+        </div>
+        <div className="grid grid-cols-1 gap-3 place-items-center min-[500px]:grid-cols-2 lg:grid-cols-4 w-full border-b-2 border-dashed p-8">
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+          <img
+            src="./assets/images/pexels.jpg"
+            alt=""
+            width="300px"
+            className="rounded-xl"
+          />
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default Gallery
+export default Gallery;

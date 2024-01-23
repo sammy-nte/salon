@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import SalonCareCards from "../components/SalonCareCards";
-import { BraidsSvg, HairCutSvg, HairDyeSvg, NailSvg, WigSvg } from "../components/Svgs";
+import {
+  BraidsSvg,
+  HairCutSvg,
+  HairDyeSvg,
+  NailSvg,
+  NavSvg,
+  WigSvg
+} from "../components/Svgs";
 
 function Home() {
   return (
@@ -134,9 +141,11 @@ function Home() {
             Indulge in the magic of fleeting moments with our captivating
             snapshots.
           </p>
-          <button className="w-28 h-8 border-2 rounded-md mt-3 hover:bg-borderColor hover:font-medium transition-all">
-            See More
-          </button>
+          <Link to="gallery">
+            <button className="w-28 h-8 border-2 rounded-md mt-3 hover:bg-borderColor hover:font-medium transition-all">
+              See More
+            </button>
+          </Link>
         </div>
       </section>
       <section className="text-center mt-20">
@@ -151,6 +160,29 @@ function Home() {
             </span>
           </button>
         </a>
+      </section>
+      <section className="flex flex-col w-[90%] justify-evenly items-center my-24 mx-auto max-w-containerMax border-borderColor border-2 p-6 rounded-2xl lg:flex-row">
+        <div className="flex flex-col items-center">
+          <h3 className=" text-tColor text-center font-[Anton] text-2xl p-5">
+            Curious about our location? No problem—navigate to our Google link
+            for easy directions
+          </h3>
+          <NavSvg width="300px" />
+          <a href="https://maps.app.goo.gl/yCnm9rPs5SBpZQ8k6" target="_blank">
+            <button className="button">
+              <span className="button_lg">
+                <span className="button_sl !bg-oColor" />
+                <span className="button_text">Find Us</span>
+              </span>
+            </button>
+          </a>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.431350241404!2d-0.1987993252713294!3d5.650567332692033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c7ebaeabe93%3A0xd78257e67498c1a0!2sUniversity%20of%20Ghana!5e0!3m2!1sen!2sgh!4v1706044826839!5m2!1sen!2sgh"
+          loading="eager"
+          referrerpolicy="no-referrer-when-downgrade"
+          className="h-[400px] w-[80%] lg:w-[400px]"
+        />
       </section>
     </section>
   );

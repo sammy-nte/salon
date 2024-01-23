@@ -18,7 +18,7 @@ function PageLayout() {
     setOpenMenu(prevState => !prevState);
   }
   return (
-    <div className="min-h-[100vh] w-full flex flex-col justify-between">
+    <div className="min-h-[100vh] w-full flex flex-col">
       <Header onSvgClick={handleMenuOpen} />
       <MobileNav openMenu={openMenu} closeMenu={closeMenu} onClick={handleMenuClose} />
       <main>
