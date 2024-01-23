@@ -1,0 +1,182 @@
+.td {
+  @apply border-2 p-2 block text-center lg:inline-block;
+}
+
+.td p:first-child {
+  @apply text-3xl font-[Anton];
+}
+
+.td p:nth-child(2) {
+  @apply text-xl lg:py-5;
+}
+
+.contact-box {
+  @apply w-[100px] h-20 shadow-[inset_5px_5px_11px_#ebe2de,inset_-5px_-5px_11px_#ffffff] grid place-content-center transition-[150ms] duration-[ease] ease-[all] mt-[50px] rounded-[10px] hover:shadow-[inset_-6px_6px_12px_#ebe2de,inset_6px_-6px_12px_#ffffff];
+  background: #fff6f1;
+}
+
+.form-submit-btn {
+  @apply w-[100px] h-[40px] border-none text-tColor font-medium cursor-pointer mt-8 mr-4 rounded-md bg-oColor shadow-[5px_5px_11px_#ebe2de,-5px_-5px_11px_#ffffff] hover:shadow-[inset_7px_7px_10px_#ebe2de,inset_-7px_-7px_10px_#ffffff];
+}
+
+.form__field {
+  @apply w-full transition-[border-color] duration-[0.2s] font-normal text-[#9b9b9b] px-0 py-[7px] border-b-2 border-b-[#9b9b9b] border-0 border-solid focus:text-[black] focus:mt-[0.3em] focus:px-0 focus:py-1.5 focus:border-b-2 focus:border-b-[#8f8ae5d4] focus:border-solid;
+  outline: 0;
+  background: transparent;
+}
+.form__field::placeholder {
+  @apply text-transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  @apply text-base cursor-text top-5;
+}
+.form__label {
+  @apply absolute block transition-[0.2s] text-[0.8rem] text-[#9b9b9b] font-light top-0;
+}
+.form__field:focus ~ .form__label {
+  @apply absolute block transition-[0.2s] text-base text-[#8f8ae5d4] font-bold top-0;
+}
+
+/* Download btn css */
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7d8082;
+  transition: all .15s ease;
+}
+
+.button::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.button::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.button:active::before {
+  top: 3px;
+}
+
+.button:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: rgba(221, 212, 232, 1);
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.button:hover .button_text {
+  color: #0f1923;
+}
+
+.button:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.button:hover .button_lg::after {
+  background-color: #fff;
+}
+
+/* Contact */
+.form__group {
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+#message {
+  resize: none;
+}
+
+.con {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.instagram-svg,
+.whatsapp-svg {
+  width: 50px;
+}
