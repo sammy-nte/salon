@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SalonCareCards from "../components/SalonCareCards";
-import { BraidsSvg, HairCutSvg, HairDyeSvg, NailSvg, WigSvg } from "../Svgs";
+import { BraidsSvg, HairCutSvg, HairDyeSvg, NailSvg, WigSvg } from "../components/Svgs";
 
 function Home() {
   return (
@@ -18,11 +18,11 @@ function Home() {
               your unique radiance. Elevate your beauty at our salon – where
               every detail enhances your natural charm.
             </p>
-            <Link className="">
+            <a href="https://theguyhair.as.me/" target="_blank" className="">
               <button className="h-8 rounded-md bg-borderColor w-44 capitalize my-5 text-white font-medium hover:scale-105 transition-all">
                 Book an appointment
               </button>
-            </Link>
+            </a>
           </div>
           <div className="hidden lg:block h-[500px] w-[300px] bg-[url('../public/assets/images/pexels.jpg')] bg-no-repeat bg-cover bg-center rounded-full my-5 relative after:content[' '] after:absolute after:w-full after:h-full after:border-4 after:rounded-full after:left-4" />
         </div>
@@ -48,7 +48,7 @@ function Home() {
           src="./assets/images/barber.jpg"
           alt="barbering tools"
           width="400px"
-          className="rounded-xl my-3 lg:my-8"
+          className="rounded-xl my-5 lg:my-8"
         />
         <div className="text-center text-tColor px-5 relative lg:w-[60%] lg:border-l-2 border-oColor lg:pl-5 lg:text-left">
           <p className="font-light">Who are we?</p>
@@ -64,7 +64,7 @@ function Home() {
             </p>
           </div>
           <Link to="about">
-            <button className="right-0 mt-3 w-[150px] rounded-md h-7 font-light border-2 p-2 block hover:bg-oC olor transition hover:font-medium lg:absolute ">
+            <button className="mx-auto mt-2 w-[150px] rounded-md h-7 font-light border-2 block lg:hover:bg-oColor transition hover:font-medium lg:absolute lg:right-0 lg:mt-3">
               More about us
             </button>
           </Link>

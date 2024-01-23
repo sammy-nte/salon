@@ -1,7 +1,11 @@
-// import React from "react";
-// import Instagram from "../components/Svgs/Instagram";
-// import Whatsapp from "../components/Svgs/Whatsapp";
 import { useState } from "react";
+import {
+  FacebookSvg,
+  Instagram,
+  SnapchatSvg,
+  WhatsappSvg
+} from "../components/Svgs";
+import { Link } from "react-router-dom";
 
 export default function ContactUs() {
   const [contactFormData, setContactFormData] = useState({
@@ -20,29 +24,45 @@ export default function ContactUs() {
     });
   }
   return (
-    <section className="bg-oColor">
-      <div className="pt-24 flex flex-col justify-around items-center mx-auto rounded-lg w-[90%] min-[840px]:w-[900px] min-[840px]:flex-row">
+    <section className="bg-oColor h-[100vh] grid place-content-center">
+      <div className="text-tColor flex flex-col justify-around items-center mx-auto rounded-lg w-[90%] min-[840px]:w-[900px] min-[840px]:flex-row">
         <div
           style={{ boxShadow: "5px 5px 11px #ebe2de, -5px -5px 11px #ffffff" }}
           className="w-full bg-oColor rounded-3xl p-4 flex flex-col justify-between my-3 text-center min-[840px]:h-[500px] min-[840px]:w-2/5"
         >
           <div>
-            <h2 className="pt-4 pb-[.3em]">Contact information</h2>
+            <h2 className="pt-4 pb-[.3em] font-[Anton] text-xl">
+              Contact information
+            </h2>
             <p className="font-light">
               Fill up the form and you will receive a response as soon as
               possible
             </p>
             <p className="font-light">Phone: 020199409</p>
           </div>
-          {/* <h2>Other Platforms</h2> */}
-          <div className="con">
-            <div className="contact-box">
-              {/* <Instagram /> */}
-            </div>
-            <div className="contact-box">
-              {/* <Whatsapp /> */}
-            </div>
-            <div className="contact-box" />
+          <h2 className="font-[Anton] mt-11">Our Platforms</h2>
+          <p className="font-light">Tap to be redirected</p>
+          <div className="grid grid-cols-1 min-[353px]:grid-cols-2 min-[512px]:grid-cols-2 place-items-center">
+            <a href="https://www.instagram.com" target="_blank">
+              <div className="contact-box">
+                <Instagram />
+              </div>
+            </a>
+            <a href="https://wa.me/233204223551" target="_blank">
+              <div className="contact-box">
+                <WhatsappSvg />
+              </div>
+            </a>
+            <a href="https://www.snapchat.com/add/kwabe.naa?share_id=dx1EM-575M8&locale=en-CA" target="_blank">
+              <div className="contact-box">
+                <SnapchatSvg />
+              </div>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <div className="contact-box">
+                <FacebookSvg />
+              </div>
+            </a>
           </div>
         </div>
         <div className="w-[80%] min-[840px]:w-2/5">
@@ -59,10 +79,7 @@ export default function ContactUs() {
                 value={contactFormData.name}
                 onChange={handleForm}
               />
-              <label
-                htmlFor="name"
-                className="form__label"
-              >
+              <label htmlFor="name" className="form__label">
                 Name
               </label>
             </div>
@@ -83,7 +100,7 @@ export default function ContactUs() {
             </div>
             <div className="w-full relative my-3 pt-3 form__group">
               <textarea
-                className="form__field"
+                className="form__field resize-none"
                 name="message"
                 id="message"
                 cols="20"
@@ -96,10 +113,7 @@ export default function ContactUs() {
                 Message
               </label>
             </div>
-            <button
-              type="submit"
-              className="form-submit-btn"
-            >
+            <button type="submit" className="form-submit-btn">
               Submit
             </button>
             <a href="mailto:sammyntewusu1@gmail.com">

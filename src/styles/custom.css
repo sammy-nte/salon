@@ -11,7 +11,7 @@
 }
 
 .contact-box {
-  @apply w-[100px] h-20 shadow-[inset_5px_5px_11px_#ebe2de,inset_-5px_-5px_11px_#ffffff] grid place-content-center transition-[150ms] duration-[ease] ease-[all] mt-[50px] rounded-[10px] hover:shadow-[inset_-6px_6px_12px_#ebe2de,inset_6px_-6px_12px_#ffffff];
+  @apply w-[130px] h-20 shadow-[inset_5px_5px_11px_#ebe2de,inset_-5px_-5px_11px_#ffffff] grid place-content-center transition-[150ms] duration-[ease] ease-[all] mt-[50px] rounded-[10px] hover:shadow-[inset_-6px_6px_12px_#ebe2de,inset_6px_-6px_12px_#ffffff];
   background: #fff6f1;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .form__field {
-  @apply w-full transition-[border-color] duration-[0.2s] font-normal text-[#9b9b9b] px-0 py-[7px] border-b-2 border-b-[#9b9b9b] border-0 border-solid focus:text-[black] focus:mt-[0.3em] focus:px-0 focus:py-1.5 focus:border-b-2 focus:border-b-[#8f8ae5d4] focus:border-solid;
+  @apply w-full transition-[border-color] duration-[0.2s] font-normal text-[#9b9b9b] px-0 py-[7px] border-b-2 border-b-[#9b9b9b] border-0 border-solid focus:text-[black] focus:mt-[0.3em] focus:px-0 focus:py-1.5 focus:border-b-2 focus:border-b-tColor focus:border-solid;
   outline: 0;
   background: transparent;
 }
@@ -34,8 +34,20 @@
   @apply absolute block transition-[0.2s] text-[0.8rem] text-[#9b9b9b] font-light top-0;
 }
 .form__field:focus ~ .form__label {
-  @apply absolute block transition-[0.2s] text-base text-[#8f8ae5d4] font-bold top-0;
+  @apply absolute block transition-[0.2s] text-base text-tColor font-bold top-0;
 }
+
+.mobile-menu-nav-links {
+    @apply grid place-content-center text-[white] w-6/12 h-10 shadow-[5px_5px_9px_#c9c1d3,-5px_-5px_9px_#f1e7fd] rounded-[10px];
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .mobile-menu-nav-links:focus {
+    @apply shadow-[inset_6px_6px_12px_#6059e6,inset_-6px_-6px_12px_#766dff];
+    background: #6b63ff;
+  }
 
 /* Download btn css */
 .button {
@@ -167,16 +179,94 @@
   box-shadow: none;
 }
 
-#message {
-  resize: none;
+.mobile-menu{
+    display: none;
 }
 
-.con {
-  display: flex;
-  justify-content: space-evenly;
-}
 
-.instagram-svg,
-.whatsapp-svg {
-  width: 50px;
+@media screen and (max-width: 850px) {
+    .wide-screen-nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        /* display: grid; */
+        place-content: center;
+        height: 100%;
+        width: 100%;
+        background: #ddd4e8;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu {
+        display: grid;
+        animation: close 350ms ease forwards;
+        -webkit-animation: close 350ms ease forwards;
+    }
+
+    .open-menu {
+        display: grid;
+        animation: open 350ms ease forwards;
+        -webkit-animation: open 350ms ease forwards;
+    }
+
+    .mobile-apply-btn {
+        background: transparent;
+        color: white;
+        border: none;
+        font-weight: 500;
+    }
+
+    @keyframes open {
+        from {
+            transform: translateX(900px);
+            -webkit-transform: translateX(900px);
+            -moz-transform: translateX(900px);
+            -ms-transform: translateX(900px);
+            -o-transform: translateX(900px);
+        }
+
+        to {
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+
+    @keyframes close {
+        from {
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+
+        to {
+            display: none;
+            transform: translateX(900px);
+            -webkit-transform: translateX(900px);
+            -moz-transform: translateX(900px);
+            -ms-transform: translateX(900px);
+            -o-transform: translateX(900px);
+        }
+    }
+
+    .close-svg {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+    }
+
+    .OpenMenuSvg {
+        display: block;
+        width: 30px;
+        margin: 0 1em 0 0;
+    }
 }

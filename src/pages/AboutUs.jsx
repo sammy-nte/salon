@@ -3,13 +3,10 @@ import AbCards from "../components/AbCards";
 function AboutUs() {
   return (
     <section className="">
-      <section className="max-w-containerMax mx-auto text-center text-tColor p-3">
-        <h1 className="text-2xl py-3 font-[Anton]">
+        <h1 className="text-2xl p-3 font-[Anton] text-tColor text-center">
           Dedicated to crafting personalized excellence where passion meets
           expertise.
         </h1>
-        <div className="h-[400px] bg-[url('../public/assets/images/barber.jpg')] bg-cover bg-no-repeat bg-center rounded-2xl w-[70%] mx-auto" />
-      </section>
       <AbCards
         text="Born from a shared love for creativity and a commitment to
             personalized service, our shop began its journey with a vision to
