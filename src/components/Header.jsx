@@ -30,7 +30,7 @@ function Header({ onSvgClick }) {
         </NavLink>
       </nav>
       <a href="https://theguyhair.as.me/" target="_blank" className="">
-        <button className="h-8 rounded-md bg-borderColor w-44 capitalize mr-5 text-white font-medium hover:scale-105 transition-all">
+        <button className="h-8 rounded-md bg-borderColor w-44 capitalize mr-5 text-white font-medium hover:scale-105 transition-all hidden lg:block">
           Book an appointment
         </button>
       </a>

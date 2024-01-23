@@ -24,11 +24,10 @@ export default function ContactUs() {
     });
   }
   return (
-    <section className=" grid place-content-center">
+    <section className=" grid place-content-center my-9">
       <div className="text-tColor flex flex-col justify-around items-center mx-auto rounded-lg w-[90%] min-[840px]:w-[900px] min-[840px]:flex-row">
         <div
-          style={{ boxShadow: "5px 5px 11px #ebe2de, -5px -5px 11px #ffffff" }}
-          className="w-full bg-oColor rounded-3xl p-4 flex flex-col justify-between my-3 text-center min-[840px]:h-[500px] min-[840px]:w-2/5"
+          className="w-full shadow-[5px_5px_9px_#e8e8e8,-5px_-5px_9px_#ffffff] rounded-3xl p-4 flex flex-col justify-between my-3 text-center min-[840px]:h-[500px] min-[840px]:w-2/5"
         >
           <div>
             <h2 className="pt-4 pb-[.3em] font-[Anton] text-xl">

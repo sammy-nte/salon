@@ -16,7 +16,7 @@ export default function MobileNav({ onClick, openMenu, closeMenu }) {
           }}
           color="white"
         />
-        <Link className="mobile-menu-nav-links" to="/">
+        <Link className="mobile-menu-nav-links" onClick={()=> onClick()}  to="/">
           Home
         </Link>
         <Link className="mobile-menu-nav-links" onClick={()=> onClick()} to="about">
@@ -28,9 +28,9 @@ export default function MobileNav({ onClick, openMenu, closeMenu }) {
         <Link className="mobile-menu-nav-links" onClick={()=> onClick()} to="contact">
           Contact Us
         </Link>
-        <Link className="mobile-menu-nav-links" onClick={()=> onClick()} to="/contact">
+        <a href="https://theguyhair.as.me/" target="_blank" className="mobile-menu-nav-links" onClick={()=> onClick()} to="/contact">
           <button className="mobile-apply-btn">Book appointment</button>
-        </Link>
+        </a>
       </nav>
     </section>
   );

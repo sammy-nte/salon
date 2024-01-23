@@ -27,24 +27,28 @@ function Gallery() {
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
         </div>
         <div className="grid grid-cols-1 gap-3 place-items-center min-[500px]:grid-cols-2 lg:grid-cols-4 w-full border-b-2 border-dashed p-8">
@@ -53,24 +57,28 @@ function Gallery() {
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
         </div>
         <div className="grid grid-cols-1 gap-3 place-items-center min-[500px]:grid-cols-2 lg:grid-cols-4 w-full border-b-2 border-dashed p-8">
@@ -79,24 +87,28 @@ function Gallery() {
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
         </div>
         <div className="grid grid-cols-1 gap-3 place-items-center min-[500px]:grid-cols-2 lg:grid-cols-4 w-full border-b-2 border-dashed p-8">
@@ -105,26 +117,31 @@ function Gallery() {
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
           <img
             src="./assets/images/pexels.jpg"
             alt=""
             width="300px"
             className="rounded-xl"
+            loading="eager"
           />
         </div>
+        
       </section>
     </div>
   );
