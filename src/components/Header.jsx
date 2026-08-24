@@ -5,7 +5,7 @@ import { OpenMenuSvg } from "./Svgs";
 function Header({ onSvgClick }) {
   return (
     <header className="flex items-center justify-between h-14 border-b-2 border-borderColor bg-oColor">
-      <h3 className="pl-3">Salon</h3>
+      <h3 className="pl-3 text-2xl">Salon</h3>
       <nav className="hidden lg:block">
         <NavLink className="mx-7 pb-1 relative after:content-[' '] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[.2rem] after:bg-borderColor after:transition-all after:duration-300 hover:after:w-full">
           Home
